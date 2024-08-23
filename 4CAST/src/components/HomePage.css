@@ -1,0 +1,74 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: white; /* White text */
+  }
+  
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    height: 100vh;
+    width: 100vw; /* Ensure the container takes up the full viewport width */
+    text-align: center; /* Center text inside the div */
+    position: relative; /* For the positioning of the menu icon */
+  }
+  
+  .menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 40px; /* Increase the size of the button */
+  }
+  
+  .menu-icon .bar {
+    width: 100%; /* Make the bars match the new width */
+    height: 3px; /* Increase the height of the bars */
+    background-color: white;
+    margin: 7px 0; /* Increase the spacing between bars */
+  }
+  
+  .title {
+    font-size: 3rem; /* Increase font size for the title */
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 2rem; /* Increase font size for the subtitle */
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .signup-button, .login-button {
+    padding: 15px 30px; /* Increase padding for the buttons */
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem; /* Increase font size for the buttons */
+  }
+  
+  .signup-button:hover, .login-button:hover {
+    background-color: white;
+    color: #1a1a1a;
+  }
+  

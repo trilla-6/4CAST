@@ -1,0 +1,80 @@
+/* Apply styles globally */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ensure the background spans the entire page */
+  html, body {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  /* Center the container and make it responsive */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+  }
+  
